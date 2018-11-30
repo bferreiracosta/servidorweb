@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(app) {
-var messages = require('../controllers/msgController');
+var messages = require('../controller/msgController');
 // messages Routes
 app.route('/messages')
    .get(messages.list_all_messages)
