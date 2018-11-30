@@ -2,7 +2,7 @@
 module.exports = function(app) {
 var messages = require('../controller/msgController');
 // messages Routes
-app.route('/messages')
+app.route('/','/messages')
    .get(messages.list_all_messages)
    .post(messages.create_a_message);
 app.route('/messages/:msgId')
